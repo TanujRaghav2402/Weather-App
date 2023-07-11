@@ -1,0 +1,94 @@
+body{
+    background-image: linear-gradient(to bottom,rgba(24, 37, 63, 0.329) ,rgb(24,37,63)), url("tree-sunrise-birds-reflection-seascape-aesthetic-5k-5000x2830-520.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 740px;
+    font-family: 'Poppins', sans-serif;
+}
+.leftContainer{
+    width: 250px;
+    margin-left: 45px;
+    margin-top: 20px;
+}
+.rightContainer{
+   width: 200px;
+   margin-top: 35px;
+   margin-right: 45px;
+}
+img{
+    transform:scale(0.6);
+}
+p{
+    color:white;
+}
+.flex{
+    display: flex;
+    justify-content:space-between;
+}
+.items{
+    display: inline-block;
+}
+.weather-icons{
+    padding:none;
+}
+.notificationElement{
+    display: none;
+    background-color: rgba(255, 255, 255, 0.216);
+    height: 40px;
+    margin-top: 5px;
+    text-align: center;
+    width: 320px;
+    border-radius: 15px;
+    box-sizing: border-box;
+}
+.para{
+    font-size: x-large;
+    margin-top: 0px;
+    font-weight:bolder;
+}
+.paraHeading{
+    margin-bottom: 2px;
+}
+.footer{
+    display: flex;
+    margin-left: 45px;
+    margin-right: 45px;
+    justify-content: center;
+    justify-content: space-between;
+}
+.polValue{
+    font-size: xxx-large;
+    font-weight: bolder;
+}
+.footerItem:hover{
+    background-color: rgba(255, 255, 255, 0.055);
+    border: 2px solid inherit;
+    width: 180px;
+    padding-left: 10px;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.polHead{
+    margin-bottom: 0px;
+}
+input[type ="text"]{
+    background-color: inherit;
+    border: none;
+    color: white;
+    font-size: 15px;
+    width: 150px;
+    padding: none;
+    padding-top: 2px;
+}
+.inputDiv{
+    display:flex ;
+}
+#searchBtn{
+    background-color: inherit;
+    border: none;
+    display: none;
+}
+#searchBtn:active{
+    transform: scale(0.7);
+}

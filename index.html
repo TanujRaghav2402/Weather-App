@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="mainCOntainer">
+      <div class="flex">
+        <div class="leftContainer">
+          <div class="weather-icons">
+            <img src="icons/unknown.png" alt="" id="mainIcon"/>
+          </div>
+          <div class="temp-description">
+            <p style="font-size:xx-large;margin-bottom: 0px;margin-top: 0px;">-</p>
+          </div>
+          <div class="location">
+            <p style="margin-bottom: 0px;">-</p>
+          </div>
+          <div class="temp-value" style="font-size: xxx-large; font-weight: bolder;cursor: pointer;">
+            <p style="margin-top: 0px;margin-bottom: 0px;">- °<span>C</span></p>
+          </div>
+          <div class="inputDiv">
+            <img src="./icons/location.png" alt="" style="height: min-content;margin-top: 3px;">
+            <p style="margin: 0px;font-size: 15px; margin-top: 3px;">Change Location</p>
+            <button id="searchBtn" onclick="searchNew(this)"><img src="./icons/searchLocation.png" alt=""></button>
+          </div>
+        </div>
+        <div class="notificationElement">
+            <p></p>
+        </div>
+        <div class="rightContainer">
+            <div class="humidity">
+                <div class="items">
+                    <img src="icons/humidity.png" alt="">
+                </div>
+                <div class="items">
+                    <p class="paraHeading">Humidity</p>
+                    <p class="para"> - </p>
+                </div>
+            </div>
+            <div class="airPressure">
+                <div class="items">
+                    <img src="icons/pressure.png" alt="">
+                </div>
+                <div class="items">
+                    <p class="paraHeading">Air Pressure</p>
+                    <p class="para"> - </p>
+                </div>
+            </div>
+            <div class="rainChance">
+                <div class="items">
+                    <img src="icons/rain.png" alt="">
+                </div>
+                <div class="items">
+                    <p class="paraHeading">Chances of Rain</p>
+                    <p class="para"> - </p>
+                </div>
+            </div>
+            <div class="windSpeed">
+                <div class="items">
+                    <img src="icons/wind.png" alt="">
+                </div>
+                <div class="items">
+                    <p class="paraHeading">Wind Speed</p>
+                    <p class="para"> - </p>
+                </div>
+            </div>
+        </div>
+      </div>
+      <br>
+      <div style="display: flex;margin-left: 35px;">
+        <img src="icons/fast-forward.png" alt="" style="transform: scale(0.3);">
+        <p style="display: inline-block;">Air Pollution </p>
+        <p class="aqi" style="cursor: pointer; "></p>
+      </div>
+      
+      <div class="footer">
+        <div class="s02 footerItem">
+            <p class="polHead">SO2</p>
+            <p class="polValue">-</p>
+        </div>
+        <div class="n02 footerItem">
+            <p class="polHead">N02</p>
+            <p class="polValue">-</p>
+        </div>
+        <div class="pm10 footerItem">
+            <p class="polHead">PM10</p>
+            <p class="polValue">-</p>
+        </div>
+        <div class="pm25 footerItem">
+            <p class="polHead">PM2.5</p>
+            <p class="polValue">-</p>
+        </div>
+        <div class="O3 footerItem">
+            <p class="polHead">o3</p>
+            <p class="polValue">-</p>
+        </div>
+        <div class="co footerItem">
+            <p class="polHead">CO</p>
+            <p class="polValue">-</p>
+        </div>
+        <div class="nh3 footerItem">
+            <p class="polHead">NH3</p>
+            <p class="polValue">-</p>
+            <p></p>
+        </div>
+      </div>
+    </div>
+
+    <script src="scripts.js"></script>
+
+  </body>
+</html>

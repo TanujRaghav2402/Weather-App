@@ -3,7 +3,7 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 740px;
+    height: 98vh;
     font-family: 'Poppins', sans-serif;
 }
 .leftContainer{
@@ -25,6 +25,7 @@ p{
 .flex{
     display: flex;
     justify-content:space-between;
+    flex-wrap: wrap;
 }
 .items{
     display: inline-block;
@@ -52,10 +53,11 @@ p{
 }
 .footer{
     display: flex;
-    margin-left: 45px;
-    margin-right: 45px;
+    margin-left: 5%;
+    margin-right: 5%;
     justify-content: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .polValue{
     font-size: xxx-large;
@@ -83,6 +85,7 @@ input[type ="text"]{
 }
 .inputDiv{
     display:flex ;
+    flex-wrap: wrap;
 }
 #searchBtn{
     background-color: inherit;
@@ -91,4 +94,28 @@ input[type ="text"]{
 }
 #searchBtn:active{
     transform: scale(0.7);
+}
+
+@media only screen and (max-width: 700px) {
+    body {
+      background-color: rgb(24,37,63);
+    }
+    .rightContainer{
+        position:absolute;
+        right: 1%;
+        flex-direction: row;
+        transform: scale(0.8);
+    }
+    .leftContainer{
+        transform: scale(0.8);
+    }
+    .footer{
+        transform: scale(0.7);
+        
+    }
+  }
+@media only screen and (max-width: 400px) {
+    .rightContainer{
+        flex-direction: row;
+    }
 }
